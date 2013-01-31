@@ -1,5 +1,3 @@
-% $Id: uqthesis.cls 42 2006-04-10 11:53:13Z cochrane $
-%
 % uqthesis.cls - University of Queensland PhD Thesis LaTeX Class File.
 
 % Copyright (C) 2004 Paul Cochrane
