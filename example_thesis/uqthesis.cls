@@ -1,0 +1,1 @@
+../uqthesis.cls

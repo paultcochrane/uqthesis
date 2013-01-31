@@ -1,0 +1,40 @@
+\documentclass[titlesmallcaps,%
+               examinerscopy,%
+               copyrightpage]{uqthesis}
+
+%%%%% Some helpful general definitions
+\input{defs_thesis}
+
+\begin{document}
+
+\frontmatter
+
+%%%%% Acknowledgements, titlepage, abstract, list of publications
+\input{frontstuff/frontstuff}
+
+\mainmatter
+
+%%%%% Introduction
+\input{intro/intro}
+
+%%%%% Other chapters in here
+\input{other_chap/other_chap}
+
+%%%%% Conclusion
+\input{conclusion/conclusion}
+
+\appendix
+
+%%%%% Projectors
+\input{appendices/an_appendix}
+ 
+\backmatter
+
+%%%%% List of symbols
+% your thesis may not need this, so comment out or delete the following line
+\input{appendices/listofsymbols}
+
+%%%%% Bibliography, in BibTeX format (the .bib file)
+\bibliography{thesis}
+
+\end{document}

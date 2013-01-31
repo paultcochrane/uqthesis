@@ -1,0 +1,126 @@
+% $Id: defs_thesis.tex 34 2004-12-01 08:03:38Z cochrane $
+
+% Copyright (C) 2004 Paul Cochrane
+% 
+% This program is free software; you can redistribute it and/or
+% modify it under the terms of the GNU General Public License
+% as published by the Free Software Foundation; either version 2
+% of the License, or (at your option) any later version.
+%   
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%    
+% You should have received a copy of the GNU General Public License
+% along with this program; if not, write to the Free Software
+% Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+
+\newcommand {\tbf}[1] {\textbf{#1}}
+\newcommand {\tit}[1] {\textit{#1}}
+\newcommand {\tmd}[1] {\textmd{#1}}
+\newcommand {\trm}[1] {\textrm{#1}}
+\newcommand {\tsc}[1] {\textsc{#1}}
+\newcommand {\tsf}[1] {\textsf{#1}}
+\newcommand {\tsl}[1] {\textsl{#1}}
+\newcommand {\ttt}[1] {\texttt{#1}}
+\newcommand {\tup}[1] {\textup{#1}}
+
+\newcommand {\mbf}[1] {\mathbf{#1}}
+\newcommand {\mmd}[1] {\mathmd{#1}}
+\newcommand {\mrm}[1] {\mathrm{#1}}
+\newcommand {\msc}[1] {\mathsc{#1}}
+\newcommand {\msf}[1] {\mathsf{#1}}
+\newcommand {\msl}[1] {\mathsl{#1}}
+\newcommand {\mtt}[1] {\mathtt{#1}}
+\newcommand {\mup}[1] {\mathup{#1}}
+
+\newcommand {\figwidth} {100mm}
+\newcommand {\Ref}[1] {Reference~\cite{#1}}
+\newcommand {\Sec}[1] {Section~\ref{#1}}
+\newcommand {\App}[1] {Appendix~\ref{#1}}
+\newcommand {\Chap}[1] {Chapter~\ref{#1}}
+\newcommand {\etal} {\emph{~et~al.}}
+\newcommand {\bul} {$\bullet$ }   % bullet
+\newcommand {\fig}[1] {Figure~\ref{#1}}   % references Figure x
+\newcommand {\imp} {$\Rightarrow$}   % implication symbol (default)
+\newcommand {\impt} {$\Rightarrow$}   % implication symbol (text mode)
+\newcommand {\impm} {\Rightarrow}   % implication symbol (math mode)
+\newcommand {\vect}[1] {\mathbf{#1}} 
+\newcommand {\hvect}[1] {\hat{\mathbf{#1}}}
+\newcommand {\del} {\partial}
+\newcommand {\eqn}[1] {Equation~(\ref{#1})} 
+\newcommand {\tab}[1] {Table~\ref{#1}} % references Table x
+\newcommand {\half} {\frac{1}{2}} 
+\newcommand {\ten}[1] {\times10^{#1}}
+\newcommand {\bra}[2] {\mbox{}_{#2}\langle #1 |}
+\newcommand {\ket}[2] {| #1 \rangle_{#2}}
+\newcommand {\Bra}[2] {\mbox{}_{#2}\left.\left\langle #1 \right.\right|}
+\newcommand {\Ket}[2] {\left.\left| #1 \right.\right\rangle_{#2}}
+\newcommand {\im} {\mathrm{Im}}
+\newcommand {\re} {\mathrm{Re}}
+\newcommand {\braket}[4] {\mbox{}_{#3}\langle #1 | #2 \rangle_{#4}} 
+\newcommand {\dotprod}[4] {\mbox{}_{#3}\langle #1 | #2 \rangle_{#4}} 
+\newcommand {\trace}[1] {\text{tr}\left(#1\right)}
+
+% spell things correctly
+\newenvironment{centre}{\begin{center}}{\end{center}}
+\newenvironment{itemise}{\begin{itemize}}{\end{itemize}}
+
+\usepackage{play}
+\usepackage[grey,times]{quotchap}
+\usepackage{makeidx}
+
+%%%%% set up the bibliography style
+\bibliographystyle{uqthesis}  % uqthesis bibliography style file, made
+			      % with makebst
+
+%%%%% optional packages
+\usepackage[square,comma,numbers,sort&compress]{natbib}
+		% this is the natural sciences bibliography citation
+		% style package.  The options here give citations in
+		% the text as numbers in square brackets, separated by
+		% commas, citations sorted and consecutive citations
+		% compressed 
+		% output example: [1,4,12-15]
+
+\usepackage[nottoc]{tocbibind}  
+				% allows the table of contents, bibliography
+				% and index to be added to the table of
+				% contents if desired, the option used
+				% here specifies that the table of
+				% contents is not to be added.
+				% tocbibind needs to be after natbib
+				% otherwise bits of it get trampled.
+
+\usepackage{amsmath,amsfonts,amssymb} % this is handy for mathematicians and physicists
+			      % see http://www.ams.org/tex/amslatex.html
+
+% \usepackage{showkeys} % this shows what labels you are using for cross
+		      % references
+
+\usepackage{graphicx} % standard graphics package for inclusion of
+		      % images and eps files into LaTeX document
+
+\usepackage{epsfig} % older graphics package for inclusion of eps
+		    % files into LaTeX document
+
+% this code hacked from that of R Chandrasekhar from UWA
+\newif\ifpdf
+\ifx\pdfoutput\undefined
+	\pdffalse    % we are not running pdfLaTeX
+\else
+	\pdfoutput=1 % we are running pdfLaTeX
+	\pdftrue
+\fi
+
+\ifpdf
+	\DeclareGraphicsExtensions{.pdf}  % this command defined in graphicx
+	\pdfcompresslevel=9  % 0: no compression, 9: highest compression
+			     % or, set compress_level 9 in file pdftex.cfg
+\else
+	\DeclareGraphicsExtensions{.ps}
+\fi
+
+% put in an index?
+% \makeindex

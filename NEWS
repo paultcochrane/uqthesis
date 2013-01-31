@@ -1,0 +1,5 @@
+$Id: NEWS 43 2006-04-10 11:54:52Z cochrane $
+
+ 2006/04/10 Paul Cochrane <paultcochrane@gmail.com>
+ * Proper caption formatting hadn't been implemented for tables.  Now the
+   same as figures.  Thanks to Justin Ross for pointing this out.
