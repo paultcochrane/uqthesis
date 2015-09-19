@@ -7,7 +7,7 @@
 %% merlin.mbs  (with options: `,seq-no,nm-init,ed-au,yr-par,xmth,tit-it,jttl-rm,vol-bf,volp-com,jpg-1,num-xser,jnm-x,pub-date,pp,ed,abr,ednx,xedn,etal-it,revdata,eprint,url,url-blk,nfss')
 %% ----------------------------------------
 %% *** UQ thesis style ***
-%% 
+%%
 %% Copyright 1994-2000 Patrick W Daly
  % ===============================================================
  % IMPORTANT NOTICE:

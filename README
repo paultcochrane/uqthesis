@@ -1,5 +1,5 @@
 ====================================================================
-The University of Queensland thesis LaTeX class file. 
+The University of Queensland thesis LaTeX class file.
 ====================================================================
 
 
@@ -9,7 +9,7 @@ The University of Queensland thesis LaTeX class file.
 
 This is a LaTeX class file (and associated style files provided with
 the package but falling under different copyright agreements) that
-can be used in the preparation of Honours and PhD theses at the 
+can be used in the preparation of Honours and PhD theses at the
 University of Queensland, Brisbane, Australia.
 
 --------------------------------------------------------------------
@@ -30,7 +30,7 @@ generating the bibliography.  This was automatically generated using the
 makebst program and conforms to the UQ guidelines for bibliographies.  You will
 also find an example_thesis directory.  Within this directory is an example
 thesis file and generic structure for the document as a whole.  Have a go at
-typesetting the thesis.tex file therein.  
+typesetting the thesis.tex file therein.
 
 To start your thesis off, copy the example_thesis directory to another
 location, calling it something different (phdthesis for example).  Then copy
