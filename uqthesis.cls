@@ -105,7 +105,9 @@
     \begin{center}
         \textsc{A thesis submitted to the University of Queensland\\
         \degreetext{}\\
-        Department of \expandafter{\@department}\\
+	\ifdef{\@department}
+	    {Department of \expandafter{\@department}\\}
+	    {}
 	\ifdef{\@school}
 	    {School of \expandafter{\@school}\\}
 	    {}
