@@ -2,9 +2,11 @@ Metadata-Version: 1.0
 Name: uqthesis
 Version: 0.1.1
 Summary: The University of Queensland LaTeX Class File
-Home-page: http://www.physics.uq.edu.au/people/cochrane/uqthesis
+Home-page: https://github.com/paultcochrane/uqthesis
 Author: Paul Cochrane
 Author-email: paultcochrane@gmail.com
-License: UNKNOWN
-Description: UNKNOWN
-Platform: UNKNOWN
+License: GPLv2
+Description:
+  Class and style files for producing theses in LaTeX for
+  submission at The University of Queensland, Australia.
+Platform: all
