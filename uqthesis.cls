@@ -21,6 +21,7 @@
 
 % ifthenelse for if loops
 \RequirePackage{ifthen}
+\RequirePackage{etoolbox}
 
 % is the thesis for Phd or Honours?  Default is PhD
 \newcommand{\degreetext}{for the degree of Doctor of Philosophy}
@@ -66,6 +67,7 @@
 % macros for defining the department, various dates and the title and
 % author of the thesis.
 \def\department#1{\gdef\@department{#1}}
+\def\school#1{\gdef\@school{#1}}
 \def\submitdate#1{\gdef\@submitdate{#1}}
 \def\copyrightyear#1{\gdef\@copyrightyear{#1}} % \author, \title in report
 \def\@title{}
@@ -104,6 +106,9 @@
         \textsc{A thesis submitted to the University of Queensland\\
         \degreetext{}\\
         Department of \expandafter{\@department}\\
+	\ifdef{\@school}
+	    {School of \expandafter{\@school}\\}
+	    {}
         \@submitdate\\}
     \end{center}
     \ifthenelse{\boolean{examinerscopy}}{%
